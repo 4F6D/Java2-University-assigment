@@ -5,6 +5,9 @@ public class Arena {
     protected Hero[] heros;
 
     // Konstruktoren
+    Arena(Hero[] heros) {
+        this.heros = heros;
+    }
 
     // Setter
 
