@@ -9,9 +9,11 @@ public class Main {
 
         // Helden generieren
         Hero[] heroes = new Hero[3];
-        heroes[0] = new Hero("Rey", 20);
-        heroes[1] = new Hero("Kaitlyn", 10);
-        heroes[2] = new Hero("Darren", 30);
+        heroes[0] = new Knight("Rey", 20);
+        heroes[1] = new Mage("Kaitlyn", 10);
+        heroes[2] = new Paladin("Darren", 30);
+
+        heroes[1].setHealth(-20);
 
         // Instanz von Arena anlegen
         Arena arena = new Arena(heroes);
