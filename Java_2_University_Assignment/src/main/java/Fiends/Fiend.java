@@ -1,6 +1,9 @@
-package com.example.java_2_university_assignment;
+package Fiends;
 
-public abstract class Fiend {
+import Game.GameObject;
+import Hero.Hero;
+
+public abstract class Fiend extends GameObject {
     // Klassenattribute
     protected int health;
 
@@ -9,15 +12,15 @@ public abstract class Fiend {
         this.health = health;
     }
 
-    // Klassenmethoden
-    public void attack(Hero targetHero) {
-
-    }
-
     // Setter
     public void setHealth(int health) {
         // Health darf nicht negativ sein
         if(health < 0) { health = health *-1; }
         this.health = health;
+    }
+
+    // Getter
+    public int getHealth() {
+        return this.health;
     }
 }

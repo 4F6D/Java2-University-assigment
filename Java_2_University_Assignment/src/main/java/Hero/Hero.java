@@ -1,6 +1,8 @@
-package com.example.java_2_university_assignment;
+package Hero;
 
-public abstract class Hero {
+import Game.GameObject;
+
+public abstract class Hero extends GameObject {
     // Klassenattribute
     protected int health;
     protected String name;
@@ -27,8 +29,4 @@ public abstract class Hero {
         return this.health;
     }
 
-    // Klassenmethoden
-    public void attack(Fiend targetFiend) {
-
-    }
 }

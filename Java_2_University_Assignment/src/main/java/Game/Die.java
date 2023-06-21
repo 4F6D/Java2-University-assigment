@@ -1,4 +1,6 @@
-package com.example.java_2_university_assignment;
+package Game;
+
+import java.util.Random;
 
 public class Die {
     // Klassenattribute
@@ -11,6 +13,7 @@ public class Die {
 
     // Klassenmethoden
     public int throwDie() {
-        return 0;
+        Random r = new Random();
+        return r.nextInt(sides) + 1;
     }
 }

@@ -1,4 +1,9 @@
-package com.example.java_2_university_assignment;
+package Game;
+
+import Hero.Hero;
+import Hero.Knight;
+import Hero.Mage;
+import Hero.Paladin;
 
 public class HeroCreator {
     public static Hero[] createHeroes() {
