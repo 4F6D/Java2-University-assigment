@@ -11,6 +11,7 @@ public class Golem extends Fiend {
     @Override
     public void attack(GameObject f) {
         f.sustainDamage(10);
+        logAction("Fiend: " + this.getClass() + " attacks Hero " + ((Hero) f).getName() + " Health: " + ((Hero) f).getHealth());
     }
 
     @Override

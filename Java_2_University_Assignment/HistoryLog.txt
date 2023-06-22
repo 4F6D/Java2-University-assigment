@@ -1,0 +1,6 @@
+Fiend: class Fiends.Spider attacks Hero Darren Health: 20
+Fiend: class Fiends.Golem attacks Hero Darren Health: 10
+Fiend: class Fiends.Demon attacks Hero Rey Health: 10
+Hero: Rey attacks Fiend class Fiends.Demon Health: 10
+Hero: Kaitlyn attacks fiend class Fiends.Spider Health: 10
+Hero: Darren attacks fiend class Fiends.Spider Health: 0

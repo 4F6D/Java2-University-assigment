@@ -12,6 +12,7 @@ public class Knight extends Hero {
 
     public void attack(GameObject f) {
         f.sustainDamage(10);
+        logAction("Hero: " + getName() + " attacks Fiend " + f.getClass() + " Health: " + ((Fiend) f).getHealth());
     }
 
     @Override

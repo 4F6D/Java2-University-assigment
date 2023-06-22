@@ -12,6 +12,7 @@ public class Paladin extends Hero {
     @Override
     public void attack(GameObject f) {
         f.sustainDamage(10);
+        logAction("Hero: " + getName() + " attacks fiend " + f.getClass() + " Health: " + ((Fiend) f).getHealth());
     }
 
     @Override

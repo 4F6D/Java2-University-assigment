@@ -9,9 +9,16 @@ import Hero.Mage;
 import Hero.Paladin;
 import Game.Game;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
+        // IO text output
+        PrintWriter p = new PrintWriter(new FileWriter("HistoryLog.txt"));
 
         // Helden generieren
         Hero[] heroes = new Hero[3];
@@ -32,6 +39,19 @@ public class Main {
 
         Game game = new Game(arena);
         game.iterate();
-    }
+        game.iterate();
 
+        // Log-Daten
+        for(Fiend f : fiends) {
+            f.print();
+            p.println(f.save());
+        }
+
+        for(Hero h : heroes) {
+            h.print();
+            p.println(h.save());
+        }
+
+        p.close();
+    }
 }
